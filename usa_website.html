@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>United States of America</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #222; }
+    .hero {
+      background: linear-gradient(135deg, #0C447C 0%, #185FA5 50%, #A32D2D 100%);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .hero h1 { font-size: 2.4rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; opacity: 0.85; max-width: 520px; margin: 0 auto; }
+    .flag-stripe { display: flex; height: 6px; border-radius: 3px; overflow: hidden; margin: 1.2rem auto; max-width: 200px; }
+    .flag-stripe span { flex: 1; }
+    .red { background: #B22234; }
+    .white-s { background: white; }
+    .blue-s { background: #3C3F6A; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 2rem; }
+    .stat-card { background: white; border-radius: 8px; padding: 1rem; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .stat-card .num { font-size: 1.4rem; font-weight: 600; color: #185FA5; }
+    .stat-card .lbl { font-size: 12px; color: #666; margin-top: 4px; }
+    .section-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #ddd; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+    .card { background: white; border: 1px solid #e5e5e5; border-radius: 10px; padding: 1rem 1.1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .card-icon { font-size: 1.6rem; margin-bottom: 8px; }
+    .card h3 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+    .card p { font-size: 13px; color: #555; line-height: 1.5; }
+    .regions { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 2rem; }
+    .region { border-radius: 8px; padding: 0.9rem 1rem; border: 1px solid #ddd; }
+    .region-name { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+    .region-states { font-size: 12px; color: #666; }
+    .r-ne { background: #E6F1FB; border-color: #B5D4F4; }
+    .r-ne .region-name { color: #0C447C; }
+    .r-s { background: #FCEBEB; border-color: #F7C1C1; }
+    .r-s .region-name { color: #791F1F; }
+    .r-mw { background: #EAF3DE; border-color: #C0DD97; }
+    .r-mw .region-name { color: #27500A; }
+    .r-w { background: #FAEEDA; border-color: #FAC775; }
+    .r-w .region-name { color: #633806; }
+    .r-t { background: #EEEDFE; border-color: #CECBF6; }
+    .r-t .region-name { color: #3C3489; }
+    .timeline { margin-bottom: 2rem; }
+    .tl-item { display: flex; gap: 14px; margin-bottom: 1rem; align-items: flex-start; }
+    .tl-year { min-width: 52px; font-size: 13px; font-weight: 600; color: #185FA5; padding-top: 1px; }
+    .tl-content { font-size: 13px; color: #555; line-height: 1.5; border-left: 2px solid #ddd; padding-left: 12px; }
+    .footer { text-align: center; font-size: 12px; color: #999; padding: 1.5rem 0 0.5rem; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div style="font-size: 2.8rem; margin-bottom: 0.5rem;">🇺🇸</div>
+    <h1>United States of America</h1>
+    <p>Land of freedom, diversity, and opportunity — a nation of 50 states spanning a continent</p>
+    <div class="flag-stripe">
+      <span class="red"></span><span class="white-s"></span><span class="red"></span>
+      <span class="white-s"></span><span class="red"></span><span class="white-s"></span>
+      <span class="blue-s"></span>
+    </div>
+    <div style="font-size: 13px; opacity: 0.75; font-style: italic;">"In God We Trust" · Founded July 4, 1776</div>
+  </div>
+
+  <div class="container">
+
+    <div class="stats-grid">
+      <div class="stat-card"><div class="num">50</div><div class="lbl">States</div></div>
+      <div class="stat-card"><div class="num">335M+</div><div class="lbl">Population</div></div>
+      <div class="stat-card"><div class="num">3.8M mi²</div><div class="lbl">Total Area</div></div>
+      <div class="stat-card"><div class="num">$29T</div><div class="lbl">GDP (2024 est.)</div></div>
+      <div class="stat-card"><div class="num">Washington D.C.</div><div class="lbl">Capital</div></div>
+    </div>
+
+    <div class="section-title">Key Facts</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🏛️</div>
+        <h3>Government</h3>
+        <p>Federal constitutional republic with three branches: executive, legislative, and judicial.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💰</div>
+        <h3>Economy</h3>
+        <p>Largest economy in the world, driven by technology, finance, healthcare, and manufacturing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌍</div>
+        <h3>Diversity</h3>
+        <p>One of the most diverse nations — over 350 languages spoken, built on waves of immigration.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>Education</h3>
+        <p>Home to 18 of the world's top 25 universities including Harvard, MIT, and Stanford.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏔️</div>
+        <h3>Geography</h3>
+        <p>From Arctic Alaska to tropical Hawaii — the most geographically diverse country on Earth.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎬</div>
+        <h3>Culture</h3>
+        <p>A global cultural powerhouse — Hollywood, jazz, hip-hop, and Silicon Valley all began here.</p>
+      </div>
+    </div>
+
+    <div class="section-title">Regions of the USA</div>
+    <div class="regions">
+      <div class="region r-ne">
+        <div class="region-name">Northeast</div>
+        <div class="region-states">New York · Massachusetts · Pennsylvania · Connecticut · New Jersey and more</div>
+      </div>
+      <div class="region r-s">
+        <div class="region-name">South</div>
+        <div class="region-states">Texas · Florida · Georgia · Tennessee · Louisiana and more</div>
+      </div>
+      <div class="region r-mw">
+        <div class="region-name">Midwest</div>
+        <div class="region-states">Illinois · Ohio · Michigan · Minnesota · Missouri and more</div>
+      </div>
+      <div class="region r-w">
+        <div class="region-name">West</div>
+        <div class="region-states">California · Washington · Colorado · Arizona · Oregon and more</div>
+      </div>
+      <div class="region r-t">
+        <div class="region-name">Territories</div>
+        <div class="region-states">Puerto Rico · Guam · U.S. Virgin Islands · American Samoa</div>
+      </div>
+    </div>
+
+    <div class="section-title">Historical Milestones</div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-year">1776</div><div class="tl-content">Declaration of Independence signed — 13 colonies break from Britain.</div></div>
+      <div class="tl-item"><div class="tl-year">1789</div><div class="tl-content">Constitution ratified; George Washington becomes the first president.</div></div>
+      <div class="tl-item"><div class="tl-year">1865</div><div class="tl-content">Civil War ends; slavery abolished with the 13th Amendment.</div></div>
+      <div class="tl-item"><div class="tl-year">1903</div><div class="tl-content">Wright Brothers achieve the first powered airplane flight in Kitty Hawk, NC.</div></div>
+      <div class="tl-item"><div class="tl-year">1945</div><div class="tl-content">USA emerges as a global superpower following World War II.</div></div>
+      <div class="tl-item"><div class="tl-year">1969</div><div class="tl-content">Apollo 11 — Neil Armstrong becomes the first human to walk on the moon.</div></div>
+      <div class="tl-item"><div class="tl-year">2001</div><div class="tl-content">September 11 attacks reshape national security and foreign policy.</div></div>
+      <div class="tl-item"><div class="tl-year">2008</div><div class="tl-content">Barack Obama elected as the 44th and first African-American president.</div></div>
+    </div>
+
+    <div class="footer">
+      United States of America · For educational purposes
+    </div>
+
+  </div>
+</body>
+</html>
